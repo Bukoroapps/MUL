@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ADVANCED COMPUTER VISION AND GRAPHICS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Knight - v3.0.0
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="assets/img/logo.png" alt=""></a>
+      <h1 data-aos="zoom-in">Welcome To My Website</h1>
+      <h2 data-aos="fade-up">ADVANCED COMPUTER VISION AND GRAPHICS</h2>
+	  <h2 data-aos="fade-up">Abstract. </h2>
+      <h2 data-aos="fade-up">The idea of using real images to generate photorealistic computer graphics (scenes) as led to the development of Image-based modeling and rendering. These techniques are very similar to those developed some years ago within the framework of analysis/synthesis collaboration. In this paper, we present a new approach to reconstruct the 3D geometry and photometry of a scene based upon two distinct processes. A vision process uses two digital images of a scene captured with a camera to reconstruct its full geometry. A computer graphics process uses a single image to recover the photometry of the surfaces (i.e. the surface reactance’s) and the radiance-to-pixel function by minimizing an error function. The generated images are then used as a feedback to modify the surface reactance’s. Our aim is to the photometry and a computer graphics rendering algorithm produces feedback to drive this operation. Finally, a synthetic image is obtained, simulating the real world very realistically.</h2>
+	  
+      <a data-aos="fade-up" href="#about" class="btn-get-started scrollto">Start Learning</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container">
+
+      <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+      <div class="logo d-block d-lg-none">
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul class="nav-inner">
+          <li><a href="index.html">Home</a></li>
+
+              <li><a href="#about">Vision</a></li>
+				<li><a href="#You">Segmentation</a></li>
+			<li><a href="#service">Region Matching</a></li>
+		<li><a href="#services">3D Reconstruction</a></li>
+
+          <li class="nav-logo"><a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+  
+  <p>Introduction</p>
+  <p>Collaboration between computer graphics and computer vision has become a very developed research domain. In fact, there are two (dual) interesting outcomes to this collaboration. On the computer graphics side, image synthesis was limited by the fact that all generated images did not use real data or real images to be computed. Therefore, no realistic images could be synthesized. This was clearly a limitation of image synthesis methods. With the (latest) advances in image-based modeling and rendering research, it is now possible to reconstruct the full geometry and photometry of a scene, using digital images of the real world, captured with a camera. This gives the opportunity to apply computer graphics algorithms merged with vision ones to compute synthetic images of real world. </p>
+  <p>A lot of applications are made possible with these techniques: some new synthetic or even unreal objects can be added to the original image, new viewpoints of the scene can be computed using classical rendering methods of computer graphics, etc. On the vision side, this cooperation-oriented image interpretation towards a model-based approach. </p>
+  <p>Computer graphics techniques bring feedback and over improved possibilities to realistic vision solutions. These solutions show (considerably better stability when compared to previous open-loop solutions. Our presentation introduces a new method which is original in two aspects: on one hand, only two images are necessary to reconstruct the full 3D geometry of the scene, and on the other hand, only a single image is necessary to reconstruct the full photometry of the same scene. This last method is based upon a new algorithm that is at the head of the analysis/synthesis concept: computer vision is used to reconstruct.</p>
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Vision</h2>
+          <p>The purpose of image analysis is to produce an intrinsic interpretation and representation of a scene from images. In the general case, we have to consider image sequences. But in this paper, we restrict ourselves to the case of analysis of a stereo pair leaving to future research the updates of the techniques which will be presented below, for the case of image sequences.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>In general, an intrinsic representation of a scene consists of:</h3>
+              <ul>
+                <li><i class="bx bx-check-double"></i>1. A three-dimensional geometric model of this scene which includes light sources and cameras (positions and extensions)</li>
+                <li><i class="bx bx-check-double"></i>2. A photometric description of the ob ject surfaces and of the light sources. This description has to account for the simulation of the energetic transfer among these objects. </li>
+              </ul>
+              <p>
+Original stereo pair to analyze If both types of information are available, they can be used by a domestic robot for example, because it will have a perfect understanding of the scene. It can also be used in multimedia application s such as virtual reality, augmented reality, postproduction, etc. First, we detail how to obtain the geometric representation of the scene from a stereo pair. We suppose that we use calibrated cameras to do this analysis.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+	
+    <!-- ======= About Us Section ======= -->
+    <section id="You" class="you">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Segmentation</h2>
+          <p>We begin with the segmentation of both images of the stereo pair.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="assets/img/services.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>Numerous techniques, either bottom-up or top-down, were tried.</h3>
+              <ul>
+<li><i class="bx bx-check-double"></i>We have chosen a non-parametric method which is fully data driven. This method is a regularization technique which minimizes some weighting between a mean square approximation error and the total frontier length produced by the segmentation.</li>
+<li><i class="bx bx-check-double"></i>Let’s be a pixel in the image domain I</li>
+<li><i class="bx bx-check-double"></i>Zs is its grey level intensity (or the R; G; B vectors for color images) in the original image</li>
+<li><i class="bx bx-check-double"></i>Ls its label in the segmentation and the simplest reactance model allowing to faithfully reconstruct the original image of a scene, keeping in mind that the related photometric analysis is highly dependent on the complexity of the searched model. </li>
+<li><i class="bx bx-check-double"></i>Our approach generates photorealistic images using a rapid global illumination algorithm including the computation of a specular component. </li>
+<li><i class="bx bx-check-double"></i>This algorithm is driven by the mean square error between the real image and the synthetic one and minimizes it with respect to the parameters of the photometric model and of the radiance-to-pixel conversion functions. Several applications of this method are presented, such as augmented reality. </li>
+<li><i class="bx bx-check-double"></i>Key words. analysis/synthesis, image-based rendering, image-based modeling, computer graphics, augmented reality, radiosity, model-based vision, image segmentation, region matching, object reconstruction. </li>
+			  </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+		
+    <!-- ======= About Us Section ======= -->
+    <section id="service" class="service">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Region Matching</h2>
+          <p> The next step consists of the region matching of the two images.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="assets/img/index.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>We have to and out what are the region pairs (left and right) which come from the same three-dimensional region that we suppose planar. </h3>
+              <ul>
+<li><i class="bx bx-check-double"></i>Our experimental conditions are the following:</li>
+<li><i class="bx bx-check-double"></i>the distance between the two cameras (or camera positions) is small with respect to the camera-to-object distances, and the angle between the two optical axis varies from eleven to ten degrees. </li>
+<li><i class="bx bx-check-double"></i>Thus, both images are very similar as we have almost two parallel projections. All real 3D facets must therefore have very close projections on both images.</li>
+<li><i class="bx bx-check-double"></i>So, we have to end out similar regions on left and right segmentations. </li>
+<li><i class="bx bx-check-double"></i>We use global region features and the peripolar constraint to obtain the matches. The computation requires a very short time, as this combinatorial problem is considerably reduced thanks to the constraints. </li>
+<p>Results of such a matching are shown Matched regions get the same 8color. Regions which were not matched are colored in black. Fortunately, a certain number of regions are matched correctly as we allowed only very strong similarities among regions. This gives us the opportunity to start the 3D reconstruction.</p>	  
+			  </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+	
+	 <!-- ======= About Us Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>3D reconstruction</h2>
+          <p>Given previous region pairs and calibration data</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="assets/img/multimedia.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>It is possible to compute the 3D position of the planar facets from which each region pair is the projection.</h3>
+              <ul>
+<li><i class="bx bx-check-double"></i>The originality of our method lies in the use of the peripolar constraint and of the coherence of the region to perform the reconstruction.</li>
+<li><i class="bx bx-check-double"></i>It is a global technique (and not a point-to-point one).</li>
+<li><i class="bx bx-check-double"></i>Roughly speaking, the position of the 3D facet obtained is such that it mirrors the left region exactly on the right one, and conversely.</li>
+<li><i class="bx bx-check-double"></i>More precisely, we maximize the overlap between the right region and its mirror projection coming from the left one.</li>	 
+			 </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+	
+		 <!-- ======= About Us Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Recognition</h2>
+          <p>Given previous region pairs and calibration data</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="assets/img/3d.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>Our approach is a model-based one: we suppose that we dispose of a 3D model of the scene.</h3>
+              <ul>
+<li><i class="bx bx-check-double"></i>The problem is restricted to the case where we have to and out what is the part of the database which is seen from the camera. </li>
+<li><i class="bx bx-check-double"></i>How to get a scene database is a very important issue but it will not be discussed here (readers interested in this topic are referred to. In other words, we have to and what is the position of the camera with respect to this database.</li>
+<li><i class="bx bx-check-double"></i>facets of the database. </li>
+<li><i class="bx bx-check-double"></i>The problem is to determine what the relationships between these two sets are. The solution we propose uses a hashing technique in order to perform, for each model facet, a first pruning of the scene ones which will be candidates for future matching. The algorithm then looks for the maximum number of matches compatible with the fact that this matching must correspond to a rigid transform between the two sets of facets.</li>	 
+<li><i class="bx bx-check-double"></i>We use a displacement error threshold to evaluate this property. If several solutions exist, we take the one which minimizes the mean square error between the scene facet vertices and the rigidly displaced model ones. For this purpose, we use the classical algorithm described in which gives the best displacement (R; T ) cutting the database model with the observed scene. </li>			
+<li><i class="bx bx-check-double"></i>Finally the image geometry is obtained by windowing and clipping the displaced database (using (R; T )) in order to retain only what is perceived by each camera. A Z-Buer algorithm allows to get rid of all non-visible facets.</li>	
+			</ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+
+      <div class="container">
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+	
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/knight-free-bootstrap-theme/ -->
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
